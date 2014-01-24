@@ -1,5 +1,5 @@
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
+$(call inherit-product, vendor/cyandream/config/gsm.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := A700
@@ -9,14 +9,14 @@ TARGET_SCREEN_WIDTH := 1920
 TARGET_SCREEN_HEIGHT := 1200
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/cyandream/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/acer/a700/full_a700.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := a700
-PRODUCT_NAME := cm_a700
+PRODUCT_NAME := cd_a700
 PRODUCT_BRAND := Acer
 PRODUCT_MODEL := A700
 PRODUCT_MANUFACTURER := Acer
